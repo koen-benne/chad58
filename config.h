@@ -26,6 +26,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define MASTER_RIGHT
 // #define EE_HANDS
 
+#ifdef OLED_ENABLE
+#   define OLED_TIMEOUT 12000
+#endif
+
 #ifdef RGBLIGHT_ENABLE
 #    define RGBLIGHT_ANIMATIONS
 #    define RGBLIGHT_HUE_STEP 6 // number of steps to cycle through the hue by
